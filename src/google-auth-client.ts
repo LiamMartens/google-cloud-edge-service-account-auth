@@ -15,7 +15,10 @@ export class GoogleAuthClient {
 
   constructor(account: ServiceAccountJSON, config?: AuthClientConfig) {
     this.account = account;
-    this.fetch = config?.fetch ?? globalThis.fetch;
+    this.fetch =
+      config?.fetch ??
+      (typeof fetch !== 'undefined' ? fetch : undefined) ??
+      globalThis.fetch;
     this.cache = new GoogleAuthCache();
     this.expiryThresholdSeconds = config?.expiryThresholdSeconds ?? 60;
   }

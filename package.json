@@ -2,7 +2,7 @@
   "name": "google-cloud-edge-service-account-auth",
   "sideEffects": false,
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Google Cloud API service account auth helpers for the Edge runtime",
   "types": "./lib/index.d.ts",
   "module": "./lib/index.js",
