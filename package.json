@@ -15,6 +15,7 @@
   },
   "files": ["lib"],
   "author": "Liam Martens <hi@liammartens.com>",
+  "keywords": ["google cloud", "gcp", "service account", "edge runtime"],
   "homepage": "https://github.com/LiamMartens/google-cloud-edge-service-account-auth",
   "bugs": {
     "url": "https://github.com/LiamMartens/google-cloud-edge-service-account-auth/issues"
