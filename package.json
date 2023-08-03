@@ -1,0 +1,32 @@
+{
+  "name": "google-cloud-edge-service-account-auth",
+  "sideEffects": false,
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Google Cloud API service account auth helpers for the Edge runtime",
+  "types": "./lib/index.d.ts",
+  "module": "./lib/index.js",
+  "exports": {
+    "types": "./lib/index.d.ts",
+    "import": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "files": ["lib"],
+  "author": "Liam Martens <hi@liammartens.com>",
+  "license": "LGPL-3.0-or-later",
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "js-base64": "^3.7.5"
+  },
+  "packageManager": "npm@9.0.0",
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0",
+    "bun": ">=0.7.0",
+    "deno": ">=1.0.0"
+  }
+}

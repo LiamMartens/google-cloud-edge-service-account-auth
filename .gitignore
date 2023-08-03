@@ -1,0 +1,8 @@
+# modules
+node_modules
+
+# lockfiles
+*-lock.json
+
+# output
+lib
