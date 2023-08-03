@@ -13,12 +13,9 @@ export class GoogleAuthClient {
   private cache: GoogleAuthCache;
   private expiryThresholdSeconds: number;
 
-  constructor(account: ServiceAccountJSON, config?: AuthClientConfig) {
+  constructor(account: ServiceAccountJSON, config: AuthClientConfig) {
     this.account = account;
-    this.fetch =
-      config?.fetch ??
-      (typeof fetch !== 'undefined' ? fetch : undefined) ??
-      globalThis.fetch;
+    this.fetch = config.fetch;
     this.cache = new GoogleAuthCache();
     this.expiryThresholdSeconds = config?.expiryThresholdSeconds ?? 60;
   }
